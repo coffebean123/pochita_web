@@ -9,12 +9,13 @@
     <style>
         .signupform{
             margin-top: 100px;
-            margin-left: 40%;
+            margin-left: 36.3%;
             padding: 40px;
-            width: 380px;
-            height: 300px;
+            width: 530px;
+            height: 750px;
             background-color:forestgreen;
             text-align: center;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -80,6 +81,117 @@
                            name="pw" 
                            placeholder="대/소문자/숫자/특수기호 포함 6자리 이상"
                            class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    이름
+                </td>
+                <td>
+                    <input type="text"
+                           name="name" 
+                           placeholder="이름을 입력하세요"
+                           class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    성별
+                </td>
+                <td>
+                    <input type="radio"
+                           name="gender" 
+                           value="man">남자
+                    <input type="radio"
+                           name="gender" 
+                           value="woman">여자
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    나이
+                </td>
+                <td>
+                    <select class="form-select mt-3"
+                        name="age">
+                        <option>==선택하세요==</option>
+                        <option value = "10대">10대</option>
+                        <option value = "20대">20대</option>
+                        <option value = "30대">30대</option>
+                        <option value = "40대">40대</option>
+                        <option value = "50대">50대</option>
+                        <option value = "60대">60대</option>
+                        <option value = "70대">70대</option>
+                        <option value = "80대">80대</option>
+                        <option value = "90대">90대</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    닉네임
+                </td>
+                <td>
+                    <input type="text"
+                           name="nick" 
+                           placeholder="닉네임을 입력하세요"
+                           class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    입덕한 날
+                </td>
+                <td>
+                    <input type="date"
+                            name="happyday">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    사는 지역
+                </td>
+                <td>
+                    <select class="form-select mt-3"
+                        name="address">
+                        <option>==선택하세요==</option>
+                        <option value = "서울">서울</option>
+                        <option value = "경기">경기</option>
+                        <option value = "인천">인천</option>
+                        <option value = "충청">충청</option>
+                        <option value = "강원">강원</option>
+                        <option value = "대전">대전</option>
+                        <option value = "광주">광주</option>
+                        <option value = "대구">대구</option>
+                        <option value = "부산">부산</option>
+                        <option value = "제주">제주</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    알게 된 경로
+                </td>
+                <td>
+                    <input type="checkbox" name="how" value="유튜브">유튜브
+                    <input type="checkbox" name="how" value="블로그">블로그
+                    <input type="checkbox" name="how" value="지인소개">지인 소개
+                    <input type="checkbox" name="how" value="전단지">전단지
+                    <input type="checkbox" name="how" value="버스광고">버스광고
+                    <input type="checkbox" name="how" value="TV광고">TV광고
+                           
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    하고 싶은 말
+                </td>
+                <td>
+                    <textarea name="memo"
+                              placeholder="포치타에게 하고싶은 말을 남겨주세요."
+                              cols="36"
+                              rows="5">
+                    </textarea>
                 </td>
             </tr>
             <tr>
