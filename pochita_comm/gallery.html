@@ -13,21 +13,23 @@
             padding: 20px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
         }
         .item a{
             aspect-ratio: 1/1;
             display: block;
+            overflow: hidden;
         }
         .item{
             overflow: hidden;
             border: 1px solid olivedrab;
             border-radius: 10px;
             background-color: olivedrab;
-            display: cover;
-            transition: transform 0.4s ease;
+            display: flex;
+            flex-direction: column;
         }
         .item:hover img{
-            transform: scale(1, 1);
+            transform: scale(1.1);
         }
         .item img{
             width: 100%;
@@ -36,7 +38,11 @@
             transition: transform 0.4s ease;
         }
         .item .title{
-
+            padding: 12px;
+            background-color: olivedrab;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -70,55 +76,69 @@
 
     <main class="gallery">
         <div class="item">
-            <a href="">
+            <a href="\gallery_detail_1.html">
                 <img src="\img\다운로드 (1).jpg">
             </a>
 
         
-        <div class="title">
-            <p>평행세계 포치타</p>
+            <div class="title">
+                <p>평행세계 포치타</p>
+            </div>
         </div>
-        </div>
+        
         <div class="item">
-            <a href="">
+            <a href="\gallery_detail_1.html">
                 <img src="\img\다운로드 (2).jpg">
             </a>
-
+            <div class="title">
+                <p>레제편 시청 후</p>
+            </div>
         </div>
-        <div class="title">
-            <p>레제편 시청 후</p>
-        </div>
-        </div>
+        
         <div class="item">
-            <a href="">
+            <a href="\gallery_detail_1.html">
                 <img src="\img\다운로드 (3).jpg">
             </a>
 
        
-        <div class="title">
-            <p>판타지</p>
+            <div class="title">
+                <p>판타지</p>
+            </div>
         </div>
-        </div>
+        
         <div class="item">
-            <a href="">
+            <a href="\gallery_detail_1.html">
                 <img src="\img\다운로드 (3)23.jpg">
             </a>
 
        
-        <div class="title">
-            <p>레제 꼬치</p>
+            <div class="title">
+                <p>레제 꼬치</p>
+            </div>
         </div>
-        </div>
+        
         <div class="item">
-            <a href="">
+            <a href="\gallery_detail_1.html">
                 <img src="\img\ljni.jpg">
             </a>
 
         
         
-        <div class="title">
-            <p>히어로</p>
+            <div class="title">
+                <p>히어로</p>
+            </div>
         </div>
+
+        <div class="item">
+            <a href="\gallery_detail_1.html">
+                <img src="\img\다운로드 (3)345.jpg">
+            </a>
+
+        
+        
+            <div class="title">
+                <p>회전 초밥</p>
+            </div>
         </div>
     </main>
 
