@@ -13,6 +13,7 @@
             width: 80%;
             text-align:left;
             margin-left: 10%;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -53,10 +54,11 @@
     </div>
     </nav>
     <div class="list_write">
-        <h1 style="text-align: center;">게시글 작성</h1>
+        <h1 style="text-align: center;">게시글</h1>
             <br>
             <h2>제목</h2>
-            <input type="text" class="form-control" name="title" placeholder="  제목을 입력해 주세요">
+            <input type="text" class="form-control" name="title" placeholder="  제목을 입력해 주세요"
+                   value="우리 팬카페 정상영업합니다" disabled>
  
             <br>
             <h2>
@@ -68,7 +70,8 @@
             <h2>
                 작성자
             </h2>
-               <input type="text" class="form-control" name="id" placeholder="  이름을 입력해 주세요">
+               <input type="text" class="form-control" name="id" placeholder="  이름을 입력해 주세요"
+                      value="포치탕 매니저" disabled>
             
         <br>
         </form>
@@ -84,4 +87,8 @@
         var quill = new Quill('#editor', {
             theme: 'snow'
         });
+
+        const content = "26년 1월 1일부로 팬카페의 운영을 시작하겠습니다.";
+        quill.setText(content);
+        quill.enable(false);
     </script>
